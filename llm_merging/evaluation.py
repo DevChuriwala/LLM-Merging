@@ -9,7 +9,7 @@ import torch
 from tqdm import tqdm
 from torch.utils import data
 
-from llm_merging.data import *
+from data import *
 
 def convert_dict_of_lists_to_list_of_dicts(dict_of_lists: Dict[Any, List]) -> List[Dict]:
     """

@@ -3,9 +3,9 @@ import sys
 
 from importlib.metadata import entry_points
 
-from llm_merging.evaluation import * 
-from llm_merging.data import * 
-from llm_merging.merging import *
+from evaluation import * 
+from data import * 
+from merging import *
 
 def all_merge_handlers():
     """Enumerate and Load (import) all merge methods."""
