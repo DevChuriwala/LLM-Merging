@@ -136,6 +136,8 @@ def tokenize_batch(tokenizer, batch, device):
 
     keys_to_tokenize = ["input", "answer_choices", "target"]
 
+    print(batch)
+
     for key in keys_to_tokenize:
         if key in batch:
             # The values of the batch are normally a list of text.The exception is that for answer_choices, the values  is a list of list. We flatten this to a single list to pass is into the tokenizer 
