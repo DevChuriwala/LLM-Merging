@@ -13,7 +13,7 @@ class FlanT5Avg(Merges):
         These values are meant to be modified by the user.
         '''
         # Give a list of models to load for the merge 
-        self.list_models = [("TARUNBHATT/flan-t5-small-finetuned-squad", "c252e4c05f5f36e3a339675828b3ac843ca31c92"), 
+        self.list_models = [("prudhvirazz/google-flan-t5-small-modified", "8a183c2bb257fbc0cec7ac05d4f5fe0b166d4049"), 
                             ("NebulaByte/flan_t5_small_squadv1_lora_extractive_qa_merged", "4d234cecc2d4ba33caf034573b388d62d4b7e26a")]
         
         # Hyperparameters 
