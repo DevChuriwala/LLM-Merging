@@ -134,9 +134,9 @@ def tokenize_batch(tokenizer, batch, device):
     # encoder decoder models pad to the right 
     tokenizer.padding_side = "right"
 
-    keys_to_tokenize = ["input", "answer_choices", "target"]
-
-    print(batch)
+    # keys_to_tokenize = ["input", "answer_choices", "target"]
+    keys_to_tokenize = ["input", "answer_choices"]
+    # print(batch)
 
     for key in keys_to_tokenize:
         if key in batch:
