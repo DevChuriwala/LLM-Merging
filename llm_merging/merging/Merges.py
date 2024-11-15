@@ -161,5 +161,6 @@ class Merges(object):
     def save_model(self, output_dir):
         assert self.merged_model is not None, "Merged model is empty"
         assert len(self.merged_model) > 0, "Merged model is empty"
-        # Save merged model as safetensor 
+        # Save merged model as safetensor
+        print(f"Save path is {os.path.join(output_dir, "safetensor.pt")}")
         save_file(self.merged_model, os.path.join(output_dir, "safetensor.pt"))
